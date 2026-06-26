@@ -6,16 +6,12 @@
 
 | 字段 | 当前值 |
 | --- | --- |
-| 状态结构版本 | `3` |
-| 监控状态 | `not_started` |
-| 基线状态 | `not_started` |
+| 状态结构版本 | `4` |
 | 最近一次成功运行 ID | 无 |
 | 最近一次成功运行日期 | 无 |
 | 增量覆盖截止日期 | 无 |
 | 当前指南版本 | `1.7` |
 | 最近更新时间 | `2026-06-26` |
-
-监控状态使用：`not_started`、`baseline_in_progress`、`active` 或 `paused`。基线状态使用：`not_started`、`in_progress` 或 `completed`。
 
 ## 2. 基线与历史补漏覆盖
 
