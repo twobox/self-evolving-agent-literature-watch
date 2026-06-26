@@ -33,10 +33,10 @@
 | [`candidates.md`](candidates.md) | 去重后的有效候选总表及其当前状态 |
 | [`SCREENING_LOG.md`](SCREENING_LOG.md) | 容易重复出现、但已完成判断的历史筛选记录 |
 | [`queries.md`](queries.md) | 检索方向、关键词池和历史补漏轮换状态 |
-| [`RUN_REPORT_TEMPLATE.md`](RUN_REPORT_TEMPLATE.md) | 单次运行报告模板与完成检查清单 |
-| [`runs/`](runs/) | 每次运行的不可变历史快照和索引 |
+| [`RUN_REPORT_TEMPLATE.md`](RUN_REPORT_TEMPLATE.md) | 单次运行报告的唯一规范模板与完成检查清单 |
+| [`runs/`](runs/) | 每次运行的不可变历史快照和固定格式索引 |
 
-兼容入口：`ignored.md` 指向历史筛选记录，`templates/run-report.md` 指向根目录运行报告模板。
+`SCREENING_LOG.md` 是历史筛选记录的唯一规范文件，`RUN_REPORT_TEMPLATE.md` 是运行报告的唯一规范模板。Agent 不应创建或维护并行别名文件。
 
 ## 核心原则
 
