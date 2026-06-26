@@ -34,7 +34,7 @@
 | [`SCREENING_LOG.md`](SCREENING_LOG.md) | 用于记录已完成判断但未进入候选池的论文及其理由，供后续运行复用结论，避免重复筛选。 |
 | [`queries.md`](queries.md) | 静态检索方向、关键词池和建议轮换顺序 |
 | [`RUN_REPORT_TEMPLATE.md`](RUN_REPORT_TEMPLATE.md) | 单次运行报告的唯一规范模板与完成检查清单 |
-| [`runs/`](runs/) | 每次运行的不可变历史快照报告目录，每次报告于该文件夹下 |
+| [`runs/README.md`](runs/README.md) | 历次运行报告的索引、统计和入口 |
 
 `SCREENING_LOG.md` 是历史筛选记录的唯一规范文件，`RUN_REPORT_TEMPLATE.md` 是运行报告的唯一规范模板。Agent 不应创建或维护并行别名文件。
 
