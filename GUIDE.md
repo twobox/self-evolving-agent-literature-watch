@@ -1,5 +1,5 @@
 ---
-guide_version: 1.1
+guide_version: 1.2
 last_updated: 2026-06-26
 ---
 
@@ -73,16 +73,7 @@ last_updated: 2026-06-26
 
 ### 4.1 去重
 
-运行前必须读取 `candidates.md` 和 `SCREENING_LOG.md`，并按以下信息判断论文是否已经出现：
-
-- 规范化论文标题；
-- 作者；
-- arXiv ID；
-- DOI；
-- OpenReview ID；
-- 会议或期刊官方链接。
-
-同一论文的 arXiv、OpenReview、会议和期刊页面应合并为一条记录。稳定 `Paper ID` 的优先级为：arXiv ID、DOI、OpenReview ID、其他官方唯一标识；没有稳定标识时才使用规范化标题。
+运行前必须读取 `candidates.md` 和 `SCREENING_LOG.md`，按规范化论文标题判断论文是否已经出现。规范化时忽略大小写、首尾空格、连续空格和常见标点差异；规范化后的标题相同，视为同一论文。
 
 ### 4.2 实质相关性判断
 
