@@ -7,7 +7,6 @@
 - Run ID：
 - 报告路径：
 - 运行日期：
-- 任务类型：`baseline` / `monitor` / `update-check`
 - 使用的指南版本：
 - 上次运行日期：
 - 增量监控范围：
@@ -17,7 +16,7 @@
 - 是否读取候选总表：
 - 是否读取历史判断记录：
 
-Run ID 必须与报告文件名及 `runs/README.md` 索引一致。报告路径使用 `runs/YYYY/YYYY-MM-DD-<task>-NN.md`。
+Run ID 必须与报告文件名及 `runs/README.md` 索引一致。报告路径使用 `runs/YYYY/YYYY-MM-DD-NN.md`。
 
 ## 2. 本次主要发现
 
