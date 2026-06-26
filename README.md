@@ -31,10 +31,10 @@
 | [`PROMPTS.md`](PROMPTS.md) | 可直接复制的日常运行提示词和使用示例 |
 | [`STATE.md`](STATE.md) | 当前执行进度、增量监控截止日期和下一轮建议 |
 | [`candidates.md`](candidates.md) | 去重后的有效候选总表及其当前状态 |
-| [`SCREENING_LOG.md`](SCREENING_LOG.md) | 容易重复出现、但已完成判断的历史筛选记录 |
+| [`SCREENING_LOG.md`](SCREENING_LOG.md) | 用于记录已完成判断但未进入候选池的论文及其理由，供后续运行复用结论，避免重复筛选。 |
 | [`queries.md`](queries.md) | 检索方向、关键词池和历史补漏轮换状态 |
 | [`RUN_REPORT_TEMPLATE.md`](RUN_REPORT_TEMPLATE.md) | 单次运行报告的唯一规范模板与完成检查清单 |
-| [`runs/`](runs/) | 每次运行的不可变历史快照和固定格式索引 |
+| [`runs/`](runs/) | 每次运行的不可变历史快照报告目录，每次报告于该文件夹下 |
 
 `SCREENING_LOG.md` 是历史筛选记录的唯一规范文件，`RUN_REPORT_TEMPLATE.md` 是运行报告的唯一规范模板。Agent 不应创建或维护并行别名文件。
 
@@ -55,7 +55,7 @@
 1. 读取规则、状态、候选池、历史筛选记录和检索方向；
 2. 执行增量监控，并选择一个有限范围的历史补漏任务；
 3. 在 `runs/YYYY/` 中新增本次报告；
-4. 更新 `candidates.md`、`SCREENING_LOG.md`、`STATE.md` 和 `runs/README.md`；
+4. 更新 `candidates.md`、`SCREENING_LOG.md` 和 `STATE.md`，并将本次运行追加到 `runs/README.md` 的运行索引。
 5. 检查去重、状态和统计数字是否一致。
 
 具体要求以 [`GUIDE.md`](GUIDE.md) 中的“单次完整运行事务”为准。
