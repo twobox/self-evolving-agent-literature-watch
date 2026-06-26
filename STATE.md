@@ -1,12 +1,3 @@
----
-state_schema_version: 1
-last_updated: 2026-06-26
-monitoring_status: not_started
-last_successful_run_id: null
-last_successful_run_date: null
-incremental_covered_through: null
----
-
 # Monitoring State
 
 本文件是当前执行进度的唯一状态来源。实际已覆盖方向、最近运行和下一次历史补漏建议等动态状态统一在此维护；`queries.md` 只保存静态检索空间与建议轮换顺序。运行时必须保留以下标题、字段名和表格列，只更新字段值或新增规范表格行。
@@ -15,7 +6,7 @@ incremental_covered_through: null
 
 | 字段 | 当前值 |
 | --- | --- |
-| 状态结构版本 | `1` |
+| 状态结构版本 | `2` |
 | 监控状态 | `not_started` |
 | 基线状态 | `not_started` |
 | 最近一次成功运行 ID | 无 |
@@ -58,7 +49,6 @@ incremental_covered_through: null
 
 ## 5. 更新规则
 
-- 每次完整运行结束后，同时更新 YAML 头部与“当前执行状态”中的对应值，两处必须一致。
 - “最近一次成功运行 ID”必须与 `runs/README.md` 中的 Run ID 及实际报告文件名一致。
 - 只有完整运行实际覆盖到的日期，才能写入“增量覆盖截止日期”。
 - 基线或补漏只完成部分范围时，将对应覆盖状态写为 `partial`，不得直接标记为 `completed`。
