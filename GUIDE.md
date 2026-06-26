@@ -1,5 +1,5 @@
 ---
-guide_version: 1.0
+guide_version: 1.1
 last_updated: 2026-06-26
 ---
 
@@ -23,7 +23,7 @@ last_updated: 2026-06-26
 - 上次运行日期；
 - 增量监控时间范围；
 - 本次历史补漏方向或检索范围；
-- 是否已访问 `candidates.md`、`ignored.md` 和历史运行记录。
+- 是否已访问 `candidates.md`、`SCREENING_LOG.md` 和历史运行记录。
 
 ## 1. 监控目标
 
@@ -73,7 +73,7 @@ last_updated: 2026-06-26
 
 ### 4.1 去重
 
-运行前必须读取 `candidates.md` 和 `ignored.md`，并按以下信息判断论文是否已经出现：
+运行前必须读取 `candidates.md` 和 `SCREENING_LOG.md`，并按以下信息判断论文是否已经出现：
 
 - 规范化论文标题；
 - 作者；
@@ -185,15 +185,19 @@ last_updated: 2026-06-26
 
 1. 读取 `GUIDE.md`，确认当前规则版本；
 2. 读取 `STATE.md`，确定上次运行日期、增量起点和下一轮建议；
-3. 读取 `candidates.md` 和 `ignored.md`，建立去重基线；
+3. 读取 `candidates.md` 和 `SCREENING_LOG.md`，建立去重基线；
 4. 读取 `queries.md`，确定本轮增量查询和一个有限的历史补漏范围；
 5. 执行检索、核验、去重和实质相关性判断；
-6. 根据 `templates/run-report.md` 新建 `runs/YYYY/YYYY-MM-DD-*.md`；
+6. 根据根目录 `RUN_REPORT_TEMPLATE.md` 新建 `runs/YYYY/YYYY-MM-DD-*.md`；
 7. 将推荐收录和暂时观察的有效候选合并更新到 `candidates.md`；
-8. 将容易重复出现且已完成实质判断的排除项按需更新到 `ignored.md`；
-9. 更新 `STATE.md` 中的上次运行、增量截止日期、已完成补漏、待跟踪论文和下一轮建议；
-10. 更新 `runs/README.md` 的运行索引；
+8. 将容易重复出现且已完成实质判断的排除项按需更新到 `SCREENING_LOG.md`；
+9. 按 `STATE.md` 的固定字段和表格结构更新上次运行、增量截止日期、覆盖进度、待跟踪论文和下一轮建议；
+10. 按 `runs/README.md` 的固定列更新运行索引；
 11. 检查候选总表没有重复论文，状态字段互不混淆，报告统计与实际写入记录一致。
+
+`SCREENING_LOG.md` 和 `RUN_REPORT_TEMPLATE.md` 分别是历史筛选记录与运行报告模板的唯一规范入口。不得创建或维护 `ignored.md`、`templates/run-report.md` 或其他并行别名文件。
+
+`STATE.md` 与 `runs/README.md` 的标题、字段名和表格列属于执行契约。运行时只更新字段值和新增规范表格行，不得另建表达相同含义的状态区或索引格式。
 
 不得只生成聊天回复或只新增运行报告。即使没有发现有效候选，也应生成真实报告并更新 `STATE.md` 与运行索引。
 
