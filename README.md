@@ -32,11 +32,13 @@
 | [`STATE.md`](STATE.md) | 当前执行进度、增量监控截止日期和下一轮建议 |
 | [`candidates.md`](candidates.md) | 去重后的有效候选总表及其当前状态 |
 | [`SCREENING_LOG.md`](SCREENING_LOG.md) | 用于记录已完成判断但未进入候选池的论文及其理由，供后续运行复用结论，避免重复筛选。 |
-| [`queries.md`](queries.md) | 检索方向、关键词池和历史补漏轮换状态 |
+| [`queries.md`](queries.md) | 静态检索方向、关键词池和建议轮换顺序 |
 | [`RUN_REPORT_TEMPLATE.md`](RUN_REPORT_TEMPLATE.md) | 单次运行报告的唯一规范模板与完成检查清单 |
 | [`runs/`](runs/) | 每次运行的不可变历史快照报告目录，每次报告于该文件夹下 |
 
 `SCREENING_LOG.md` 是历史筛选记录的唯一规范文件，`RUN_REPORT_TEMPLATE.md` 是运行报告的唯一规范模板。Agent 不应创建或维护并行别名文件。
+
+`queries.md` 不保存逐次运行状态；实际覆盖进度、最近运行和下一轮建议统一以 `STATE.md` 为准。
 
 ## 核心原则
 
