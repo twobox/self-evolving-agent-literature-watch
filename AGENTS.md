@@ -9,10 +9,10 @@
 1. `GUIDE.md`
 2. `STATE.md`
 3. `candidates.md`
-4. `ignored.md`
+4. `SCREENING_LOG.md`
 5. `queries.md`
 
-如任务是完整运行，还必须使用 `templates/run-report.md`。
+如任务是完整运行一次监控报告，还必须使用根目录中的 `RUN_REPORT_TEMPLATE.md`。这是唯一规范的运行报告模板。
 
 ## 完整运行要求
 
@@ -22,7 +22,7 @@
 
 - 新建 `runs/YYYY/YYYY-MM-DD-*.md`；
 - 合并更新 `candidates.md`；
-- 按需更新 `ignored.md`；
+- 按需更新 `SCREENING_LOG.md`；
 - 更新 `STATE.md`；
 - 更新 `runs/README.md`；
 - 核对报告统计与实际记录一致。
@@ -37,7 +37,9 @@
 - 不得把“本次首次发现的旧论文”描述为“近期新发布论文”。
 - 不得回写历史运行报告；论文后续变化应记录在新的运行报告及候选总表中。
 - “本次出现类型”和“仓库当前状态”必须使用不同字段。
-- 只把容易重复出现、已进行实质判断的排除项写入 `ignored.md`，不要保存全部检索噪声。
+- 只把容易重复出现、已实质判断排除的文章写入 `SCREENING_LOG.md`，不要保存全部检索噪声。
+- `STATE.md` 和 `runs/README.md` 使用固定结构；更新时应保留既有标题、字段名和表格列，不得另建并行状态区或自定义索引格式。
+- 不得重新创建 `ignored.md`、`templates/run-report.md` 或其他与规范文件并行的别名入口。
 
 ## 工作边界
 
