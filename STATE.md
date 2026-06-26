@@ -21,7 +21,7 @@ incremental_covered_through: null
 | 最近一次成功运行 ID | 无 |
 | 最近一次成功运行日期 | 无 |
 | 增量覆盖截止日期 | 无 |
-| 当前指南版本 | `1.3` |
+| 当前指南版本 | `1.4` |
 | 最近更新时间 | `2026-06-26` |
 
 监控状态使用：`not_started`、`baseline_in_progress`、`active` 或 `paused`。基线状态使用：`not_started`、`in_progress` 或 `completed`。
