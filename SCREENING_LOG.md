@@ -8,3 +8,4 @@
 | -------- | -------- | -------- | -------- | -------- | -------- | ------------ |
 | arXiv:2305.10250 | MemoryBank: Enhancing Large Language Models with Long-Term Memory | 排除 | 首次公开早于滚动三年起点，主要评测集中于陪伴式对话记忆、人格理解与共情，缺少跨任务能力持续提升的强证据 | 2026-06-27-01 | 2026-06-27 | 出现正式高质量发表，或后续版本补充跨任务经验复用与能力提升证据 |
 | arXiv:2303.17651 | Self-Refine: Iterative Refinement with Self-Feedback | 排除 | 仅在单次任务内循环生成反馈并修订输出，没有持久化经验并复用于后续任务 | 2026-06-27-01 | 2026-06-27 | 后续方法加入跨任务持久记忆或可复用经验机制 |
+| arXiv:2406.07496 | TextGrad: Automatic "Differentiation" via Text | 排除 | 通用复合 AI 系统文本优化框架，核心应用跨问答、代码、分子与治疗规划；没有以 Agent 的持久 Harness、经验积累或跨任务持续改进为核心问题 | 2026-06-27-02 | 2026-06-27 | 后续工作将 TextGrad 明确扩展为持续运行 Agent 的跨任务 Harness 演化机制 |
