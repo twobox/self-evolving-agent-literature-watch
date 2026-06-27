@@ -4,7 +4,7 @@
 
 ## 1. 推荐：自动执行一次完整运行
 
-适合绝大多数日常使用。首次运行时，Agent 应根据 `STATE.md` 启动基线阶段并建立初始候选池；后续运行执行增量监控，同时继续补全尚未覆盖的基线方向。
+适合绝大多数日常使用。首次运行时，Agent 应根据 `STATE.md` 初始化首份运行记录并执行一个有限历史补漏任务；后续运行执行增量监控，同时轮换一个有限历史补漏方向。
 
 ```text
 请在当前仓库执行一次完整的论文监控运行。
@@ -48,20 +48,20 @@
 - 合成任务、课程与训练环境生成
 - Agent 自我改进评测、能力边界与安全退化
 
-## 3. 启动基线阶段
+## 3. 首次运行（空状态初始化）
 
-通常默认提示词已经可以根据 `STATE.md` 识别尚未开始的基线阶段。需要明确指定首次运行时，可以使用：
+仓库尚无成功运行记录时，可以使用：
 
 ```text
-请在当前仓库执行首次完整监控运行，并启动基线阶段。
+请在当前仓库执行首次完整监控运行。
 
-先读取 AGENTS.md、GUIDE.md、STATE.md、candidates.md、SCREENING_LOG.md 和 queries.md。按照 GUIDE.md 选择一个有限的基线范围，开始检查当前日期向前滚动三年的相关论文，建立初始候选池，并在 STATE.md 中记录本次实际覆盖与后续待补全方向。优先覆盖 Agent Memory、Experience Reuse、Harness 和 Agent Skills。
+先读取 AGENTS.md、GUIDE.md、STATE.md、candidates.md、SCREENING_LOG.md 和 queries.md。按照 GUIDE.md 选择一个有限历史补漏范围，检查当前日期向前滚动三年的相关论文，初始化首份运行报告、候选池和运行状态，并在 STATE.md 中记录本次实际覆盖与下一轮建议。优先检查 Agent Memory、Experience Reuse、Harness 和 Agent Skills。
 
 完成后创建首份运行报告，并同步更新 candidates.md、SCREENING_LOG.md、STATE.md 和 runs/README.md。不要只在对话中返回报告。
 
 本次不生成完整论文笔记，不下载论文 PDF，也不检查代码、模型和数据集。
 
-结束时汇报候选统计、主要发现、当前基线覆盖进度和下一轮建议。
+结束时汇报候选统计、主要发现、当前历史补漏覆盖情况和下一轮建议。
 ```
 
 ## 4. 仅检查已有候选的重要更新
