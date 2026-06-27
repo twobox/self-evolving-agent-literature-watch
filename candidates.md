@@ -26,10 +26,10 @@
 | 22 | [Large Language Models Can Self-Improve At Web Agent Tasks](https://arxiv.org/abs/2405.20309) | 用 Agent 自己生成的 WebArena 轨迹构造合成训练数据并微调基础模型，验证 Agent 能通过自生成经验提高长程网页任务能力。 | 2024-05-30 首次公开于 arXiv | University of Pennsylvania；ExtensityAI；Johannes Kepler University Linz；NXAI |  |  |
 | 23 | [Agent Workflow Memory](https://arxiv.org/abs/2409.07429) | 从离线或在线交互轨迹中归纳可复用工作流，并在后续任务中选择性检索，提升跨任务和跨网站泛化。 | 2024-09-11 首次公开于 arXiv | Carnegie Mellon University；MIT |  |  |
 | 24 | [DynaSaur: Large Language Agents Beyond Predefined Actions](https://arxiv.org/abs/2411.01747) | 允许 Agent 在线生成、组合并积累通用程序动作，在现有工具缺失或失败时形成可复用的新动作能力。 | 2024-11-04 首次公开于 arXiv；COLM 2025 | University of Maryland；Adobe Research |  |  |
-| 25 | [WebEvolver: Enhancing Web Agent Self-Improvement with Coevolving World Model](https://arxiv.org/abs/2504.21024) | 让网页 Agent 与世界模型共同演化，由世界模型生成训练数据并执行前瞻模拟，突破自主学习中的探索停滞。 | 2025-04-23 首次公开于 arXiv | Tencent AI Lab |  |  |
-| 26 | [AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs](https://arxiv.org/abs/2508.16153) | 以情景记忆和可学习案例选择策略构建在线强化学习循环，通过记忆读写让 Agent 无需更新底座模型即可持续适应。 | 2025-08-22 首次公开于 arXiv | UCL AI Centre；Huawei Noah’s Ark Lab；Jilin University；Institute of Automation, CAS |  |  |
+| 25 | [WebEvolver: Enhancing Web Agent Self-Improvement with Coevolving World Model](https://arxiv.org/abs/2504.21024) | 让网页 Agent 与世界模型共同演化，由世界模型生成训练数据并执行前瞻模拟，突破自主学习中的探索停滞。 | 2025-04-23 首次公开于 arXiv；EMNLP 2025 Main Conference | Tencent AI Lab |  |  |
+| 26 | [Memento: Fine-tuning LLM Agents without Fine-tuning LLMs](https://arxiv.org/abs/2508.16153) | Memento 以情景记忆和可学习案例选择策略构建在线强化学习循环，通过记忆读写让 Agent 无需更新底座模型即可持续适应。 | 2025-08-22 首次公开于 arXiv（2025-08-25 更新至 v2） | UCL AI Centre；Huawei Noah’s Ark Lab；Jilin University；Institute of Automation, CAS |  |  |
 | 27 | [Learning on the Job: An Experience-Driven Self-Evolving Agent for Long-Horizon Tasks](https://arxiv.org/abs/2510.08002) | 用分层记忆组织轨迹反思形成的结构化经验，使长程任务 Agent 在工作中持续学习并将经验迁移到新任务。 | 2025-10-09 首次公开于 arXiv | Central South University；Shanghai AI Laboratory；Fudan University；Shanghai Innovation Institute；Zhejiang University |  |  |
-| 28 | [Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution](https://arxiv.org/abs/2512.10696) | 通过多维经验蒸馏、情境自适应复用和效用驱动的增删机制，让程序记忆从静态归档转为持续演化的经验池。 | 2025-12-11 首次公开于 arXiv | Shanghai Jiao Tong University；Tongyi Lab, Alibaba Group |  |  |
+| 28 | [Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution](https://arxiv.org/abs/2512.10696) | 通过多维经验蒸馏、情境自适应复用和效用驱动的增删机制，让程序记忆从静态归档转为持续演化的经验池。 | 2025-12-11 首次公开于 arXiv（2026-04-15 更新至 v2） | Shanghai Jiao Tong University；Tongyi Lab, Alibaba Group |  |  |
 
 ## 填写规则
 
