@@ -13,6 +13,23 @@
 | 9 | [Bayesian-Agent: Posterior-Guided Skill Evolution for LLM Agent Harnesses](https://arxiv.org/abs/2606.08348) | 把技能与 SOP 作为带不确定性的假设，基于验证轨迹维护后验并触发补丁、拆分、压缩、退役或探索等可审计操作。 | 2026-06-06 首次公开于 arXiv | IDEA Research；香港科技大学（广州）；DataArcTech |  |  |
 | 10 | [Are We Ready For An Agent-Native Memory System?](https://arxiv.org/abs/2606.24775) | 从数据管理视角拆解 Agent 记忆的存储、抽取、检索路由和维护模块，比较动态更新下的效果、成本与稳定性。 | 2026-06-23 首次公开于 arXiv | 公开摘要页未列明 |  |  |
 | 11 | [Forget to Improve: On-Device LLM-Agent Continual Learning via Budget-Curated Memory](https://arxiv.org/abs/2606.25115) | 以单位字节净价值统一决定经验记忆的保留、共享和信任，在受限设备上兼顾持续学习、资源预算与抗投毒。 | 2026-06-23 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 12 | [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) | 将环境反馈转写为语言反思并存入情景记忆，在不更新模型参数的情况下让 Agent 从多次尝试中改进决策。 | 2023-03-20 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 13 | [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651) | 让同一 LLM 反复生成反馈并修订输出，形成无需额外训练的自我反馈—改进循环，为后续反思型 Agent 提供通用机制。 | 2023-03-30 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 14 | [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) | 以自动课程、可复用代码技能库和执行反馈驱动的迭代提示，在 Minecraft 中实现开放式终身技能积累与迁移。 | 2023-05-25 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 15 | [AdaPlanner: Adaptive Planning from Feedback with Language Models](https://arxiv.org/abs/2305.16653) | 根据环境反馈在计划内外动态修订计划，并把成功计划沉淀为少样本技能示例，提升后续任务的规划效率。 | 2023-05-26 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 16 | [Large Language Models Are Semi-Parametric Reinforcement Learning Agents](https://arxiv.org/abs/2306.07929) | 以长期经验记忆保存跨回合成功与失败，并用记忆级强化学习更新经验选择，使冻结 LLM Agent 持续演化。 | 2023-06-09 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 17 | [Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization](https://arxiv.org/abs/2308.02151) | 训练回顾模型从失败根因和环境奖励中生成提示修订，通过策略梯度持续优化 Agent 的决策提示。 | 2023-08-04 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 18 | [ExpeL: LLM Agents Are Experiential Learners](https://arxiv.org/abs/2308.10144) | 从训练任务轨迹中自动归纳自然语言经验原则，并在推理时检索原则与相似经历，实现无需参数更新的跨任务经验迁移。 | 2023-08-20 首次公开于 arXiv；AAAI 2024 | 公开摘要页未列明 |  |  |
+| 19 | [Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://arxiv.org/abs/2310.04406) | 将蒙特卡洛树搜索、语言模型价值评估、外部反馈和失败反思结合，在单任务搜索过程中迭代改进推理与行动轨迹。 | 2023-10-06 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 20 | [CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization](https://arxiv.org/abs/2310.10134) | 持续更新以因果抽象为核心的文本记忆，使冻结模型在不同任务和环境间累积经验并快速适应。 | 2023-10-16 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 21 | [Empowering Large Language Model Agents through Action Learning](https://arxiv.org/abs/2402.15809) | 从失败任务中迭代创建和修订 Python 动作函数，扩展 Agent 的开放动作空间并把经验转化为可复用技能。 | 2024-02-24 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 22 | [Large Language Models Can Self-Improve At Web Agent Tasks](https://arxiv.org/abs/2405.20309) | 用 Agent 自己生成的 WebArena 轨迹构造合成训练数据并微调基础模型，验证 Agent 能通过自生成经验提高长程网页任务能力。 | 2024-05-30 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 23 | [Agent Workflow Memory](https://arxiv.org/abs/2409.07429) | 从离线或在线交互轨迹中归纳可复用工作流，并在后续任务中选择性检索，提升跨任务和跨网站泛化。 | 2024-09-11 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 24 | [DynaSaur: Large Language Agents Beyond Predefined Actions](https://arxiv.org/abs/2411.01747) | 允许 Agent 在线生成、组合并积累通用程序动作，在现有工具缺失或失败时形成可复用的新动作能力。 | 2024-11-04 首次公开于 arXiv；COLM 2025 | 公开摘要页未列明 |  |  |
+| 25 | [WebEvolver: Enhancing Web Agent Self-Improvement with Coevolving World Model](https://arxiv.org/abs/2504.21024) | 让网页 Agent 与世界模型共同演化，由世界模型生成训练数据并执行前瞻模拟，突破自主学习中的探索停滞。 | 2025-04-23 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 26 | [AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs](https://arxiv.org/abs/2508.16153) | 以情景记忆和可学习案例选择策略构建在线强化学习循环，通过记忆读写让 Agent 无需更新底座模型即可持续适应。 | 2025-08-22 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 27 | [Learning on the Job: An Experience-Driven Self-Evolving Agent for Long-Horizon Tasks](https://arxiv.org/abs/2510.08002) | 用分层记忆组织轨迹反思形成的结构化经验，使长程任务 Agent 在工作中持续学习并将经验迁移到新任务。 | 2025-10-09 首次公开于 arXiv | 公开摘要页未列明 |  |  |
+| 28 | [Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution](https://arxiv.org/abs/2512.10696) | 通过多维经验蒸馏、情境自适应复用和效用驱动的增删机制，让程序记忆从静态归档转为持续演化的经验池。 | 2025-12-11 首次公开于 arXiv | 公开摘要页未列明 |  |  |
 
 ## 填写规则
 
