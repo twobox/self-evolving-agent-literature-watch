@@ -85,6 +85,16 @@
 | 81 | [WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks](https://arxiv.org/abs/2407.05291) | 在 WorkArena 上加入组合式知识工作任务，重点检验跨应用规划、检索和推理能力。 | 2024-07 首次公开于 arXiv |  |  |  |
 | 82 | [AgentRewardBench: Evaluating Automatic Evaluations of Web Agent Trajectories](https://arxiv.org/abs/2504.08942) | 以专家标注轨迹评测自动奖励模型和 LLM 评审器，为 Agent 训练中的可靠反馈信号提供基准。 | 2025-04 首次公开于 arXiv |  |  |  |
 | 83 | [An Illusion of Progress? Assessing the Current State of Web Agents](https://arxiv.org/abs/2504.01382) | 通过在线真实网站和人类对齐评审重新评估网页 Agent，揭示静态基准可能高估改进幅度。 | 2025-04 首次公开于 arXiv |  |  |  |
+| 84 | [Large Language Models as Optimizers](https://arxiv.org/abs/2309.03409) | 将历史候选提示及其得分写入元提示，让 LLM 迭代提出并评估更优指令，为 Agent 的 Prompt 与 Harness 黑盒优化提供基础范式。 | 2023-09-07 首次公开于 arXiv；ICLR 2024 | Google DeepMind |  |  |
+| 85 | [EvoPrompt: Connecting LLMs with Evolutionary Algorithms Yields Powerful Prompt Optimizers](https://arxiv.org/abs/2309.08532) | 将 LLM 与遗传算法、差分进化等演化算子结合，在离散自然语言空间中持续生成、筛选和改进 Prompt。 | 2023-09-15 首次公开于 arXiv；ICLR 2024 |  |  |  |
+| 86 | [Promptbreeder: Self-Referential Self-Improvement Via Prompt Evolution](https://arxiv.org/abs/2309.16797) | 同时演化任务 Prompt 和负责改写 Prompt 的变异 Prompt，形成自指式的提示优化循环。 | 2023-09-28 首次公开于 arXiv |  |  |  |
+| 87 | [CRAFT: Customizing LLMs by Creating and Retrieving from Specialized Toolsets](https://arxiv.org/abs/2309.17428) | 从训练样例自动生成、验证、抽象和去重可复用代码工具，并在推理时检索调用，为 Agent 建立可扩展的任务专用技能库。 | 2023-09-29 首次公开于 arXiv；ICLR 2024 | University of Illinois Urbana-Champaign |  |  |
+| 88 | [Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation](https://arxiv.org/abs/2310.02304) | 让调用 LLM 的改进器程序递归优化自身脚手架代码，并用下游效用筛选更好的改进策略，直接探索可自我改写的 Agent Harness。 | 2023-10-03 首次公开于 arXiv；COLM 2024 | Microsoft Research；Stanford University |  |  |
+| 89 | [DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines](https://arxiv.org/abs/2310.03714) | 将 LM Pipeline 抽象为参数化声明式模块，并通过编译器自动收集示例和优化组合，使推理链与 Agent Loop 可按指标自举改进。 | 2023-10-05 首次公开于 arXiv | Stanford University |  |  |
+| 90 | [Eureka: Human-Level Reward Design via Coding Large Language Models](https://arxiv.org/abs/2310.12931) | 用编码 LLM 对奖励函数进行进化搜索，并结合执行统计和反思持续改写奖励代码，使 Agent 通过强化学习自动获得复杂技能。 | 2023-10-19 首次公开于 arXiv；ICLR 2024 | NVIDIA；University of Pennsylvania；Caltech；UT Austin |  |  |
+| 91 | [Language Agents as Optimizable Graphs](https://arxiv.org/abs/2402.16823) | 将单 Agent 与多 Agent 协作统一表示为可优化计算图，同时学习节点提示和图连接，自动改进推理流程与协作拓扑。 | 2024-02-26 首次公开于 arXiv；ICML 2024 | KAUST AI Initiative；Swiss AI Lab IDSIA / USI / SUPSI |  |  |
+| 92 | [Agent-Pro: Learning to Evolve via Policy-Level Reflection and Optimization](https://arxiv.org/abs/2402.17574) | 把长程交互轨迹和动态信念压缩为可优化的行为准则与世界模型，并通过策略级反思和深度优先搜索持续升级 Agent Prompt。 | 2024-02-27 首次公开于 arXiv；ACL 2024 Main | Zhejiang University；Institute of Software, CAS；University of Chinese Academy of Sciences |  |  |
+| 93 | [Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs](https://arxiv.org/abs/2406.11695) | 在缺少模块级标签和梯度时，联合优化多阶段 LM 程序各模块的自由文本指令与少样本示例，为复杂 Agent Pipeline 提供端到端 Prompt 优化器。 | 2024-06-17 首次公开于 arXiv；EMNLP 2024 | Stanford University；Basis Research Institute；KTH Royal Institute of Technology；UC Berkeley |  |  |
 
 ## 填写规则
 
